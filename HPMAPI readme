@@ -1,0 +1,31 @@
+How to Run the Application
+1. Save the code in a file named main.py.
+2. Install FastAPI and Uvicorn:
+pip install fastapi uvicorn
+3. Run the application:
+uvicorn main:app --reload
+4. Open the Swagger API documentation:
+http://127.0.0.1:8000/docs
+
+Example POST Request
+{
+"patient_id": 101,
+"name": "Rahul Kumar",
+"age": 35,
+
+"disease": "Diabetes",
+"phone": "9876543210"
+}
+
+API Endpoints
+Method Endpoint Purpose
+GET / Home API
+POST /patients Add a patient
+GET /patients Get all patients
+GET /patients/{patient_id} Get one patient
+PUT /patients/{patient_id} Update patient
+DELETE /patients/{patient_id} Delete patient
+
+Concepts Demonstrated
+FastAPI, Pydantic models, CRUD operations, GET/POST/PUT/DELETE methods, path
+parameters, data validation, HTTPException, and Swagger documentation.
